@@ -7,7 +7,7 @@ import java.sql.Timestamp;
 @Embeddable
 public class versionId implements Serializable {
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     private Dokument dokument;
 
     private Timestamp vTimestamp;

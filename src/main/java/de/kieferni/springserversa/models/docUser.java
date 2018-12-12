@@ -23,7 +23,7 @@ public class docUser {
     private String email;
     private String uPassword;
 
-    @ManyToMany(fetch = FetchType.EAGER,
+    @ManyToMany(fetch = FetchType.LAZY,
     cascade = CascadeType.ALL)
     @JoinTable(name = "Permissions", joinColumns = {@JoinColumn(name="uId")},
     inverseJoinColumns = { @JoinColumn(name = "dId")})

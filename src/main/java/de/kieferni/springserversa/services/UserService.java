@@ -21,4 +21,8 @@ public class UserService {
     }
 
     public docUser getSingledocUser(Long id) {return userRepository.findById(id).get();}
+
+    public void saveUser(docUser docUser) {
+        userRepository.save(docUser);
+    }
 }
