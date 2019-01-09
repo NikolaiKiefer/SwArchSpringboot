@@ -19,10 +19,10 @@ public class Dokument {
 
     private String name;
 
-    /*@ManyToMany(fetch = FetchType.LAZY,
+    @ManyToMany(fetch = FetchType.LAZY,
     cascade = CascadeType.REMOVE,
     mappedBy = "docs")
-    private Collection<docUser> user;*/
+    private Collection<docUser> user;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "vId.dokument")
     private Collection<docVersion> versions;

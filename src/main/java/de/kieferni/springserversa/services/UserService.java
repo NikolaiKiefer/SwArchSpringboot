@@ -20,9 +20,10 @@ public class UserService {
         return docUsers;
     }
 
-    public docUser getSingledocUser(Long id) {return userRepository.findById(id).get();}
+    public docUser getSingledocUser(Long id) {return userRepository.f.findById(id).get();}
 
     public void saveUser(docUser docUser) {
+        System.out.println(docUser);
         userRepository.save(docUser);
     }
 }

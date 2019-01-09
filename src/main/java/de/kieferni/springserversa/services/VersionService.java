@@ -21,5 +21,10 @@ public class VersionService {
         return docVersions;
     }
 
+    public void saveVersion(docVersion docVersion) {
+        System.out.println(docVersion);
+        versionRepository.save(docVersion);
+    }
+
 
 }
